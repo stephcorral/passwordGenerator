@@ -7,7 +7,6 @@ With HTML, CSS, and JS
 Create an application that creates a randomly generated password
 </p>
 
-
 <h4>It must</h4>
 <ul>
 <li>Only take passwords that are longer than 6 characters but shorter than 50 characters total</li>
@@ -17,4 +16,4 @@ Create an application that creates a randomly generated password
 <li>Your code must be DRY (worry about this at the end!)</li>
 </ul>
 
-
+<h1>Done!</h1>
