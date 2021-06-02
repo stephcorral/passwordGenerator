@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="script.js"></script>
     <link rel="stylesheet" href="styles.css">
     <title>Password Generator</title>
 </head>
@@ -14,36 +13,49 @@
             <h3>PASSWORD GENERATOR TOOL</h3>
             <h1>Generate a Secure Password</h1>
             <p>Use our online password generator to instantly create a secure,random password.</p>
-
+            
         </div>
+        
+        <br>
         
         
         <div class="container">
-            <form>
-                <label for="">Password length</label>
-                <input type="range" min="1" max="50" value="10" id="pwLenRange">
-                <input type="number" min="1" max="50" value="10" id="pwLenNumber">
+            <form class="form">
+                <label for="pwLen">Password length</label>
+                <div class="range">
+                    <input type="range" min="1" max="50" value="10" id="pwLenRange">
+                    <input type="number" min="1" max="50" value="10" id="pwLenNumber">
+                </div>
+                
+                <div class="radioButtons">
+                    <label for="">Easy to say</label>
+                    <input type="radio" id="radioButtons" value="other">
+                    <label for="">Easy to read</label>
+                    <input type="radio" id="radioButtons" value="other">
+                    <label for="">All characters</label>
+                    <input type="radio" id="radioButtons" value="other">
 
-                <label for="">Easy to say</label>
-                <input type="radio" id="radioButtons" value="other">
-                <label for="">Easy to read</label>
-                <input type="radio" id="radioButtons" value="other">
-                <label for="">All characters</label>
-                <input type="radio" id="radioButtons" value="other">
+                </div>
 
-                <label for="">Uppercase</label>
-                <input type="checkbox" name="uppercase">
-                <label for="">Lowercase</label>
-                <input type="checkbox" name="lowercase">
-                <label for="">Numbers</label>
-                <input type="checkbox" name="numbers">
-                <label for="">Symbols</label>
-                <input type="checkbox" name="symbols">
+                <div class="checkboxes">
+                    
+                    <label for="">Uppercase</label>
+                    <input type="checkbox" name="uppercase">
+                    <label for="">Lowercase</label>
+                    <input type="checkbox" name="lowercase">
+                    <label for="">Numbers</label>
+                    <input type="checkbox" name="numbers">
+                    <label for="">Symbols</label>
+                    <input type="checkbox" name="symbols">
+                    
+                </div>
+                
                 
                 <button type="submit">Copy Password</button>
                 
             </form>
         </div>
     </div>
+    <script src="script.js"></script>
 </body>
 </html>
