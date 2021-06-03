@@ -46,3 +46,33 @@ body{
     display: flex;
     align-items: center;
 }
+.pwLenNumber{
+    display: flex;
+    align-items: center;
+}
+.numberInput{
+    width: 2rem;
+}
+.passwordDisplay{
+    background-color: whitesmoke;
+    color: black;
+    padding: 1rem;
+    border: 1px solid #333;
+    height: 2rem;
+    width: 350px;
+    word-break: break-all;
+    border-radius: .5rem;
+}
+.btn{
+    grid-column: span 2;
+    background-color: transparent;
+    border: 2px solid #333;
+    padding: .5rem;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 1rem;
+}
+
+.btn:hover{
+    background-color: #ffffff33;
+}
