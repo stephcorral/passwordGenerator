@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous"> -->
     <title>Password Generator</title>
 </head>
 <body>
@@ -31,7 +32,7 @@
                     <input type="number" min="1" max="50" value="10" id="pwLenNumber" class="numberInput">
                 </div>
                 
-                <div class="radioButtons">
+                <!-- <div class="radioButtons">
                     <label for="">Easy to say</label>
                     <input type="radio" id="radioButtons" value="other">
                     <label for="">Easy to read</label>
@@ -39,7 +40,7 @@
                     <label for="">All characters</label>
                     <input type="radio" id="radioButtons" value="other">
 
-                </div>
+                </div> -->
 
                 <div class="checkboxes">
                     
@@ -60,7 +61,7 @@
                 
             </form>
         </div>
-        <button type="submit" class="btn">Generate Password</button>
+        <button onclick="generate()" class="btn" type="submit">Generate Password</button>
     </div>
     <script src="script.js"></script>
 </body>
