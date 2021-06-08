@@ -1,22 +1,22 @@
 
 
 generate(){
+    
     //possible password values
-    const values = "ABCDEFGHIJKLMNOPQRSTUVWZYZabcdefghijklmnopqrstuvwxyz1234567890!@#$%^&*()_+"
+    const values = "ABCDEFGHIJKLMNOPQRSTUVWZYZabcdefghijklmnopqrstuvwxyz1234567890!@#$%^&*()_+";
     
-    const password = ""
+    const password = "";
     
-    const complexity = document.getElementById('pwLenRange').value
+    const complexity = document.getElementById('pwLenRange').value;
     
     //create for loop to choose pw chars
-    
     for(var i =0; i<= complexity; i++){
         password = password + values.charAt(Math.floor(Math.random()*Math.floor(values.length -1)))
     }
     
     //add password to display
     
-    document.getElementById('passwordDisplay').value = password
+    document.getElementById('passwordDisplay').value = password;
     
 }
 
