@@ -1,13 +1,64 @@
 
+var values = "";
 
-generate(){
+uppercase = () =>{
+
+    var checkSelectUc = document.getElementById("includeUppercase");
+    if(checkSelectUc.checked){
+        values += "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+        
+    }
+
+}
+
+lowercase = () =>{
+
+    var checkSelectLc = document.getElementById("includeLowercase");
+    if(checkSelectLc.checked){
+        values += "abcdefghijklmnopqrstuvwxyz";
+    }
+
+}
+
+numbers = () =>{
+
+    var checkSelectNums = document.getElementById("includeNumbers");
+    if(checkSelectNums.checked){
+        values += "0123456789";
+    }
+
+
+}
+
+symbols = () =>{
+
+    var checkSelectSym = document.getElementById("includeSymbols");
+    if(checkSelectSym.checked){
+        values += "!#$%&'()*+,-./:;<=>?@[\]^_`{|}~";
+    }
+
+
+}
+
+
+
+
+generate = () => {   
     
+
     //possible password values
-    const values = "ABCDEFGHIJKLMNOPQRSTUVWZYZabcdefghijklmnopqrstuvwxyz1234567890!@#$%^&*()_+";
+
+    uppercase();
+    lowercase();
+    numbers();
+    symbols();
+
+    console.log(values);
+
+
+    var password = "";
     
-    const password = "";
-    
-    const complexity = document.getElementById('pwLenRange').value;
+    var complexity = document.getElementById('pwLenRange').value;
     
     //create for loop to choose pw chars
     for(var i =0; i<= complexity; i++){
@@ -16,21 +67,34 @@ generate(){
     
     //add password to display
     
-    document.getElementById('passwordDisplay').value = password;
+    document.getElementById('passwordDisplay').innerText = password;
     
 }
 
 
+
+/*
 //this just connects the range and the number to each other
+var rangeNumValue = document.getElementById('pwLenRange').value;
 
-document.getElementById('pwLenRange').oninput = function(){
+var lenNum = document.getElementById('pwLenNumber').value;
+console.log(lenNum);
 
-    if(document.getElementById('pwLenRange').value > 0){
+ rangeLenSelector = ()=> {
 
-        document.getElementById('pwLenNumber').innerHTML = document.getElementById('pwLenRange').value
-    }
-    else{
-        document.getElementById('pwLenNumber').innerHTML = "1"
-    }
+
+    rangeNumValue= lenNum;
+
+    
 }
+
+lenSelected = () => {
+
+    lenNum = 12;
+    console.log(rangeNumValue);
+
+
+}
+
+*/
 

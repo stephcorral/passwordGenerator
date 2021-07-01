@@ -20,7 +20,7 @@
         <br>
 
         <div class="container">
-            <h3 class="passwordDisplay">Password</h3>
+            <h3 id="passwordDisplay">Password</h3>
         </div>
         
         
@@ -28,19 +28,10 @@
             <form class="form" id="passwordGeneratorForm">
                 <label for="pwLen">Password length</label>
                 <div class="range">
-                    <input type="range" min="1" max="50" value="10" id="pwLenRange">
-                    <input type="number" min="1" max="50" value="10" id="pwLenNumber" class="numberInput">
+                    <input type="range" min="1" max="50" value="10" id="pwLenRange" oninput="this.nextElementSibling.value = this.value">
+                    <output for="pwLenRange"></output>
                 </div>
                 
-                <!-- <div class="radioButtons">
-                    <label for="">Easy to say</label>
-                    <input type="radio" id="radioButtons" value="other">
-                    <label for="">Easy to read</label>
-                    <input type="radio" id="radioButtons" value="other">
-                    <label for="">All characters</label>
-                    <input type="radio" id="radioButtons" value="other">
-
-                </div> -->
 
                 <div class="checkboxes">
                     
